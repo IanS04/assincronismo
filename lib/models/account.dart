@@ -16,9 +16,9 @@ class Account {
       id: map["id"], 
       name: map["name"], 
       lastName: map["lastName"], 
-      balance: map["balance"],
+      balance: (map["balance"] as num).toDouble(),
       );
-  }
+}
 
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
